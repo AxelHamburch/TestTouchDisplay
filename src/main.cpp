@@ -49,7 +49,8 @@ String config_energymode = "0";
 
 // LNURL, pay und QR-Code variables
 int randomPin;
-int amount = 0; // Preis x100, ohne Dezimalstellen
+int backdoorPin = 0; // 0 = no backdoor pin
+int amount = 0;      // Preis x100, ohne Dezimalstellen
 String preparedURL;
 String qrData;
 String selection;
@@ -113,6 +114,10 @@ bool checkSECRETPin(const char *SECRETpin)
     return false;
   }
   if (String(SECRETpin).equals(String(randomPin)))
+  {
+    return true;
+  }
+  if ((backdoorPin != 0) && (String(SECRETpin).equals(String(backdoorPin))))
   {
     return true;
   }
