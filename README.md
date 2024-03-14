@@ -33,6 +33,8 @@ Direct access to the web installer can be found here: [web installer](https://er
 
 This is FOSS according to MIT license. For those who want to clone and edit it themselves, here is some information:
 
+The backend is an [LNbits](https://lnbits.com/) server with a wallet account. The interface for processing the payment is provided by the [LNURLdevice](https://github.com/lnbits/lnurldevice) extension. You can select this in your LNbits account.
+
 As development environment (**I**ntegrated **D**evelopment **E**nvironment) I would recommend [PlatformIO](https://platformio.org/platformio-ide) on [VSCode](https://code.visualstudio.com/). As a graphical user interface [LVGL](https://lvgl.io/) (**L**ight and **V**ersatile Embedded **G**raphics **L**ibrary) was used and mostly created by the application [SquareLine Studio](https://squareline.io/).
 
 ## Aknowledgement
