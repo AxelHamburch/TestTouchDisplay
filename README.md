@@ -23,7 +23,7 @@ The connection of a relay is quite simple. The supplied cable is sufficient. The
 
 1. Flash the firmware on the ESP32
 2. Create and set up a LNbits wallet
-3. Configure the offline⚡️Switch via the touch display
+3. Configure the offline⚡️Switch via the touch display (PIN: 123456)
 
 For a detailed description see my website: [ereignishorizont.xyz/offlinelnswitch](https://ereignishorizont.xyz/offlinelnswitch/en/)
 
